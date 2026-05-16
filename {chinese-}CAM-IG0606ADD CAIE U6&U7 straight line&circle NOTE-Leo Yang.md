@@ -1,11 +1,7 @@
 # Topic 6: 直线图 (Straight-line Graphs)
-- This note is maintained by LG-leo.
-- If you find it helpful, feel free to follow me or leave a ⭐ on GitHub.
-- It helps me keep producing more free study resources.
-- Check out my other notes: https://github.com/LG-leo?tab=repositories
 - 这份笔记由 LG-leo 整理和维护。如果你觉得这份笔记对你有帮助，欢迎在 GitHub 上关注我或给我一个 ⭐，这能帮助我持续产出更多免费的学习资源。
 - 我的其他课程笔记：https://github.com/LG-leo?tab=repositories
-- 中英版本
+- This note is maintained by LG-leo. If you find it helpful, feel free to follow me or leave a ⭐ on GitHub. It helps me keep producing more free study resources. Check out my other notes: https://github.com/LG-leo?tab=repositories
 ## 6.1 线段的长度与中点
 
 - **长度公式**：已知两点 A(x1, y1)、B(x2, y2)，线段 AB 的长度为 sqrt[(x2-x1)^2 + (y2-y1)^2]。
