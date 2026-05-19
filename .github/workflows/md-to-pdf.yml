@@ -1,0 +1,28 @@
+name: Convert Markdown to PDF
+
+on:
+  push:
+    paths: ['**.md']
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex
+          
+      - name: Convert Markdown to PDF
+        run: |
+          mkdir -p output
+          pandoc README.md -o output/README.pdf --pdf-engine=xelatex
+          
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: converted-pdf
+          path: output/*.pdf
